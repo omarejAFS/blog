@@ -1,0 +1,16 @@
+<h1>New Blog</h1>
+
+<table>
+<tr>
+<th>
+<%= link_to 'My Blog', controller: 'articles' %>
+</th>
+<th>
+<%= link_to 'New article', new_article_path %>
+</th> 
+<th>
+<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+    <% end %>
+</th>
+</tr>
+<button onClick="window.location.href = 'http://localhost:3000/articles/new'">start article</button>
